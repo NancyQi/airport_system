@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M&N | 机场地图</title>
+    <link rel="shortcut icon" href="static/logo.jpg" type="image/x-icon"/>
+    <link href="static/css/hello.css"  rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function showImg(){
+        document.getElementById("doc").style.display='block';
+        }
+        function hideImg(){
+        document.getElementById("doc").style.display='none';
+        }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900">
+</head>
+<body background="#FBFBFB">
+    <div class="top">
+        <ul>
+            <li><img  style="float: left;margin-left: 10px;border-radius: 5px;" alt="here" src="static/logo.jpg" width="72" height="52"/></li>
+            <li><div style="font-size: 18px;margin-left: 10px;float: left;line-height: 52px;color:black">武汉市天河机场</div></li>
+            <li >
+                <img style="margin-left:650px;border-radius: 15px;" width="30" height="30" src="static/user.jpg">
+                <ul style="margin-left: 620px;">
+                    <li>
+                    <!---<a href="personal_center.html">个人中心</a>--->
+                        <form action="/to_personal_center" method="post" enctype="multipart/form-data">
+                             <button class="mybtn">个人中心</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="/to_week_news" method="post" enctype="multipart/form-data">
+                             <button class="mybtn">本周记录</button>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+            <li style="margin-left: 10px;">Administrator</li>
+            <li> <img src="static/why.jpg" class="why" width="30" height="30" onMouseOut="hideImg()" onmouseover="showImg()"/></li>
+            <li>
+                <form action="/submit"method="post"enctype="multipart/form-data">
+                    <button class="btn">提交</button>
+                </form>
+            </li>
+        </ul>
+
+    </div>
+    <div class="me">
+        <img class="one"  alt="here" src="static/1.jpg" width="150" height="300" onclick="document.getElementById('light').style.display='block';"/>
+        <img class="one_m" alt="here" src="static/1_2.jpg" width="400" height="300"/>
+        <img  class="one"  alt="here" src="static/2.jpg" width="150" height="300" onclick="document.getElementById('light_2').style.display='block';"/>
+    </div>
+    <div class="you">
+        <img  class="two"  alt="here" src="static/3.jpg" width="100" height="100" onclick="document.getElementById('light_3').style.display='block';"/>
+        <img class="two_m"  alt="here" src="static/4.jpg" width="370" height="100" onclick="document.getElementById('light_4').style.display='block';"/>
+        <img class="two"  style="margin-left:20px;" alt="here" src="static/3.jpg" width="100" height="100" onclick="document.getElementById('light_5').style.display='block';"/>
+   </div>
+    <img  class="three"  alt="here" src="static/6.jpg" width="400" height="100" onclick="document.getElementById('light_6').style.display='block';"/>
+    <img  class="four" alt="here" src="static/7.jpg" width="400" height="70" onclick="document.getElementById('light_7').style.display='block';"/>
+    <img class="mean_1"  alt="here" src="static/mean_1.jpg" width="130" height="130" />
+    <img class="mean_2"  alt="here" src="static/mean_2.jpg" width="130" height="130" />
+    <img class="mean_3"  alt="here" src="static/mean_3.jpg" width="130" height="200" />
+    <div id="light" class="white_content">
+        <form action="/hello" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" value="上传文件" />
+        </form>
+    </div>
+    <div id="light_2" class="white_content">
+        <form action="/hello_2" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" value="上传文件" />
+        </form>
+    </div>
+    <div id="light_3" class="white_content">
+        <form action="/hello_3" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" value="上传文件" />
+        </form>
+    </div>
+    <div id="light_4" class="white_content">
+        <form action="/hello_4" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" value="上传文件" />
+        </form>
+    </div>
+    <div id="light_5" class="white_content">
+        <form action="/hello_5" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" value="上传文件" />
+        </form>
+    </div>
+    <div id="light_6" class="white_content">
+        <form action="/hello_6" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" value="上传文件" />
+        </form>
+    </div>
+    <div id="light_7" class="white_content">
+        <form action="/hello_7" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" value="上传文件" />
+        </form>
+    </div>
+
+
+    <div id="doc" >点击地图上有边框的区域，上传图片</div>
+
+    <div class="mytop_2">
+        <hr color="#DCDCDC" SIZE=2 >
+    </div>
+
+</body>
+</html>
